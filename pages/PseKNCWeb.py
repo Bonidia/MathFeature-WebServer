@@ -71,7 +71,7 @@ def app():
                             'It can be a value between (0, 1]', min_value=0.1, step=0.1, max_value=1.0)
         s = st.number_input('Calculate only the '
                             'frequency of each oligonucleotide in the input sequence. '
-                            'Unless otherwise specified, e.g., 2', min_value=1, step=1, max_value=3)
+                            'Unless otherwise specified, e.g., 2', min_value=2, step=1, max_value=3)
         label_dataset = st.text_input('Dataset Label, e.g., lncRNA, mRNA, sncRNA')
         submit = st.form_submit_button(label='Submit')
 
@@ -109,7 +109,7 @@ def app():
                 xp = path + 'files/propValues-DNA-k3.txt'
             elif seq == 2 and k == 2:
                 x = path + 'files/propNames-RNA-k2.txt'
-                xp = path + 'propValues-RNA-k2.txt'
+                xp = path + 'files/propValues-RNA-k2.txt'
 
             foutput = parameters(xp, x, t, k, j, w, s, finput, label_dataset, seq, allowed_chars)
             if st.session_state.foutput != foutput or st.session_state.foutput != '':
