@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
         # main.add_page(group, pages[sub_descr].app)
         # main.run()
-        print('Computation time %s senconds' % (time.time() - start_time))
+        # print('Computation time %s senconds' % (time.time() - start_time))
     except:
         st.warning("Please fill out so required fields")
         st.success('Author: Robson Parmezan Bonidia')
