@@ -13,9 +13,9 @@ import time
 import plotly.express as px
 import plotly.graph_objects as go
 import base64
-import webbrowser
 import multiprocessing
 from Bio import SeqIO
+from link_button import link_button
 from itertools import product
 import sys
 
@@ -258,11 +258,9 @@ if __name__ == '__main__':
         st.success('Author: Robson Parmezan Bonidia')
         st.error('Report any problem to our repository!')
         doc = 'https://bonidia.github.io/MathFeature/'
-        if st.button('See our Documentation!'):
-            webbrowser.open_new_tab(doc)
+        link_button('See our Documentation!', doc)
         url = 'https://github.com/Bonidia/MathFeature'
-        if st.button('Visit our Repository!'):
-            webbrowser.open_new_tab(url)
+        link_button('Visit our Repository!', url)
         # https://github.com/Bonidia/MathFeature/issues
 
 #############################################################################
