@@ -117,7 +117,7 @@ def app():
                 try:
                     if file_size < 40:
                         if padd == 'Yes':
-                            df = pd.read_csv(st.session_state.foutput)
+                            df = pd.read_csv(st.session_state.foutput, header=None)
                         else:
                             df = pd.read_table(st.session_state.foutput)
                         csv = df.to_csv(index=False)
