@@ -10,7 +10,7 @@ def main():
     authorizer = DummyAuthorizer()
 
     # Define a new user having full r/w permissions and a read-only
-    # anonymous user
+    # anonymous user test
     authorizer.add_user('mathfeature', '&l#t$L^Ex9BWHYGpZR', path + '/tmp/')
     # authorizer.add_user('mathfeature','&l#t$L^Ex9BWHYGpZR',
     #                     path + '/tmp/',perm='elradfmwMT')
