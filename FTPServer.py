@@ -11,7 +11,7 @@ def main():
 
     # Define a new user having full r/w permissions and a read-only
     # anonymous user test
-    authorizer.add_user('mathfeature', '&l#t$L^Ex9BWHYGpZR', path + '/tmp/')
+    authorizer.add_user('mathfeature', '&l#t$L^Ex9BWHYGpZR', path + '/tmp/', perm='lr')
     # authorizer.add_user('mathfeature','&l#t$L^Ex9BWHYGpZR',
     #                     path + '/tmp/',perm='elradfmwMT')
     # authorizer.add_anonymous(os.getcwd())
