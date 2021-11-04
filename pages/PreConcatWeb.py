@@ -88,19 +88,15 @@ def app():
     if st.session_state.foutput != '':
         try:
             st.title('Download - Dataset')
-            download = st.button(label='Download Fasta file')
-            if download:
-                try:
-                    # st.text(st.session_state.foutput.split)
-                    foutput_down = st.session_state.foutput.split('/')[-1]
-                    # st.text(foutput_down)
-                    # webbrowser.open('ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down)
-                    down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@mathfeature.icmc.usp.br:2121/' + foutput_down
-                    link_button('Download', down)
-                except:
-                    st.error('Download error!')
+            # st.text(st.session_state.foutput.split)
+            foutput_down = st.session_state.foutput.split('/')[-1]
+            # st.text(foutput_down)
+            # webbrowser.open('ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down)
+            down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@mathfeature.icmc.usp.br:2121/' + foutput_down
+            link_button('Download', down)
+            # download = st.button(label='Download Fasta file')
         except:
-            st.error('An error occurred while reading csv file!')
+            st.error('Download error!')
     else:
         st.success('Author: Robson Parmezan Bonidia')
 
