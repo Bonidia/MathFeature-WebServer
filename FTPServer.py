@@ -3,7 +3,8 @@ import sys
 from pyftpdlib.authorizers import DummyAuthorizer
 from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
-path = os.path.dirname(os.path.abspath(__file__))
+# path = os.path.dirname(os.path.abspath(__file__))
+path = os.path.dirname(os.path.realpath('__file__'))
 
 def main():
     # Instantiate a dummy authorizer for managing 'virtual' users
