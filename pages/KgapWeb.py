@@ -11,6 +11,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import base64
 import webbrowser
+from link_button import link_button
 from st_aggrid import AgGrid, GridOptionsBuilder
 import sys
 path = os.path.dirname(os.path.abspath(__file__))

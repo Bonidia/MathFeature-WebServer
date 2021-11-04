@@ -12,6 +12,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import base64
 import webbrowser
+from link_button import link_button
 from Bio import SeqIO
 from st_aggrid import AgGrid, GridOptionsBuilder
 import sys
@@ -93,8 +94,9 @@ def app():
                     # st.text(st.session_state.foutput.split)
                     foutput_down = st.session_state.foutput.split('/')[-1]
                     # st.text(foutput_down)
-                    webbrowser.open('ftp://mathfeature:%26l%23t%24L%5'
-                                    'EEx9BWHYGpZR@localhost:2121/' + foutput_down)
+                    # webbrowser.open('ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down)
+                    down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down
+                    link_button('Download', down)
                 except:
                     st.error('Download error!')
         except:

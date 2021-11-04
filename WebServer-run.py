@@ -261,6 +261,8 @@ if __name__ == '__main__':
         link_button('See our Documentation!', doc)
         url = 'https://github.com/Bonidia/MathFeature'
         link_button('Visit our Repository!', url)
+        cs = 'https://github.com/Bonidia/MathFeature/tree/master/Case%20Studies'
+        link_button('See Input Files - Case Studies!', cs)
         # https://github.com/Bonidia/MathFeature/issues
 
 #############################################################################
