@@ -84,19 +84,32 @@ def app():
     # else:
     #     st.error("Any problem, contact us!")
 
-
     if st.session_state.foutput != '':
         try:
             st.title('Download - Dataset')
-            # st.text(st.session_state.foutput.split)
-            foutput_down = st.session_state.foutput.split('/')[-1]
-            # st.text(foutput_down)
-            # webbrowser.open('ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down)
-            down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@mathfeature.icmc.usp.br:2121/' + foutput_down
-            link_button('Download', down)
-            # download = st.button(label='Download Fasta file')
+            download = st.button(label='Download CSV file')
+            file_size = (os.path.getsize(st.session_state.foutput) / 1024) / 1024
+            if download:
+                try:
+                    if file_size < 50:
+                        df = pd.read_csv(st.session_state.foutput)
+                        csv = df.to_csv(index=False)
+                        b64 = base64.b64encode(csv.encode()).decode()
+                        # webbrowser.open('data:file/csv;base64,' + b64)
+                        link = f'<a href="data:file/csv;base64,{b64}" ' \
+                               f'download="dataset.csv">Download CSV file</a>'
+                        st.markdown(link, unsafe_allow_html=True)
+                        st.success('Download successful!')
+                    else:
+                        # st.text(st.session_state.foutput.split)
+                        foutput_down = st.session_state.foutput.split('/')[-1]
+                        # st.text(foutput_down)
+                        webbrowser.open('ftp://mathfeature:%26l%23t%24L%5'
+                                        'EEx9BWHYGpZR@localhost:2121/' + foutput_down)
+                except:
+                    st.error('Download error!')
         except:
-            st.error('Download error!')
+            st.error('An error occurred while reading csv file!')
     else:
         st.success('Author: Robson Parmezan Bonidia')
 
