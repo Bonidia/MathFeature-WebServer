@@ -95,7 +95,7 @@ def app():
                     foutput_down = st.session_state.foutput.split('/')[-1]
                     # st.text(foutput_down)
                     # webbrowser.open('ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down)
-                    down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@localhost:2121/' + foutput_down
+                    down = 'ftp://mathfeature:%26l%23t%24L%5EEx9BWHYGpZR@mathfeature.icmc.usp.br:2121/' + foutput_down
                     link_button('Download', down)
                 except:
                     st.error('Download error!')
