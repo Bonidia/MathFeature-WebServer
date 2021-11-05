@@ -81,6 +81,16 @@ conda deactivate
 
 ```
 
+**4 - Running WebServer:**
+
+```sh
+
+python3.7 FTPServer.py &
+streamlit run WebServer-run.py --server.port 80
+In your browser, access the IP 
+
+```
+
 ## Citation
 
 If you use this code in a scientific publication, we would appreciate citations to the following paper:
