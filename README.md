@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://github.com/Bonidia/MathFeature">Official MathFeature Repository</a> •
   <a href="https://bonidia.github.io/MathFeature/">Documentation</a> •
-  <a href="#installing-dependencies-and-package">Installing</a> 
+  <a href="#installing-dependencies-and-package">Installing</a> •
   <a href="#citation">Citation</a> 
 </p>
 
