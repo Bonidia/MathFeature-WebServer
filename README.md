@@ -35,8 +35,6 @@ See: https://www.biorxiv.org/content/10.1101/2020.12.19.423610v1
 
 ## Installing dependencies and package
 
-Conda - Terminal
-
 ```sh
 $ git clone https://github.com/Bonidia/MathFeature-WebServer.git MathFeature-WebServer
 
