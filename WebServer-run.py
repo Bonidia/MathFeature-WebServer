@@ -15,7 +15,6 @@ import plotly.graph_objects as go
 import base64
 import multiprocessing
 from Bio import SeqIO
-from link_button import link_button
 from itertools import product
 import sys
 
@@ -24,6 +23,7 @@ path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(path + '/class/')
 sys.path.append(path + '/pages/')
 from multiapp import MultiPage
+from link import link_button
 ############################################################################# 
 
 import EntropyClassWeb

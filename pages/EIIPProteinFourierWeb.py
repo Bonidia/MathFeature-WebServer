@@ -12,7 +12,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import base64
 import webbrowser
-from link_button import link_button
 from Bio import SeqIO
 from st_aggrid import AgGrid, GridOptionsBuilder
 import sys
