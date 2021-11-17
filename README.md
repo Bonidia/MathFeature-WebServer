@@ -53,7 +53,7 @@ $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 
 $ ./Miniconda3-latest-Linux-x86_64.sh
 
-$ export PATH=~/miniconda/bin:$PATH
+$ export PATH=~/miniconda3/bin:$PATH
 
 ```
 
@@ -69,7 +69,7 @@ conda env create -f mathfeature-webserver.yml -n MathFeature-WebServer
 
 ```sh
 
-conda activate MathFeature-WebServer
+conda activate MathFeature-WebServer or source activate MathFeature-WebServer
 
 ```
 
