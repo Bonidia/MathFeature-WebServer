@@ -86,7 +86,7 @@ conda deactivate
 ```sh
 
 python3.7 FTPServer.py &
-streamlit run WebServer-run.py --server.port 80
+streamlit run WebServer-run.py --server.port 8080
 In your browser, access the IP 
 
 ```
