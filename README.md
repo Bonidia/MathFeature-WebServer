@@ -96,7 +96,7 @@ streamlit run WebServer-run.py
 ```
 In your browser, access the IP
 
-The generated files were in folder tmp/
+The generated files are located in the tmp/ folder.
 ```
 
 ## Citation
