@@ -91,8 +91,12 @@ or
 
 streamlit run WebServer-run.py
 
-In your browser, access the IP 
+```
 
+```
+In your browser, access the IP
+
+The generated files were in folder tmp/
 ```
 
 ## Citation
